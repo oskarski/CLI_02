@@ -1,0 +1,98 @@
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8" />
+    <title>Przepisy Kulinarne</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+<header>
+    <h1>Smaczne Przepisy Kulinarne</h1>
+    <img src="../images/logo.png" alt="Smaczne Przepisy Kulinarne - logo" />
+</header>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Strona Główna</a></li>
+        <li><a href="../dish/list.html">Dania</a></li>
+        <li><a href="../dish-ingredient/list.html">Składniki Dań</a></li>
+        <li><a href="../ingredient/list.html">Składniki</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Szczegóły dania</h2>
+
+    <form method="post">
+        <label for="name">Nazwa dania *</label>
+        <input id="name" type="text" name="name" value="Hamburger" required disabled />
+        <span id="error-name"></span>
+
+        <label for="instructions">Instrukcje wykonania *</label>
+        <textarea name="instructions" id="instructions" rows="5" required disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi in repudiandae temporibus? Beatae deleniti deserunt earum impedit modi nobis numquam odit repudiandae? Ad autem, deleniti eos facilis laboriosam quibusdam tenetur?</textarea>
+        <span id="error-instructions"></span>
+
+        <label for="image-url">Link do zdjęcia</label>
+        <input type="text" id="image-url" name="imageUrl" disabled />
+        <span id="error-imageUrl"></span>
+
+        <a href="../dish/list.html" class="btn btn-default">Powrót</a>
+    </form>
+
+    <h2>Składniki</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Nazwa</th>
+            <th>Ilość</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                Bułka
+            </td>
+            <td>
+                1 szt.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Sałata
+            </td>
+            <td>
+                1 szt.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kotlet
+            </td>
+            <td>
+                1 szt.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ser
+            </td>
+            <td>
+                1 plaster
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ketchup
+            </td>
+            <td>
+                1 szt.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    Zrobione przez Oskara Kupskiego
+</footer>
+</body>
+</html>
